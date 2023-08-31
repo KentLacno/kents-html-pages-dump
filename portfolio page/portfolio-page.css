@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&family=Blinker:wght@200&family=Open+Sans:ital,wght@1,600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #6B2929;
+  --secondary-color: #EED5AE;
+  --third-color: #4B594D;
+  --fourth-color: #3D444B;
+  font-family: 'Averia Serif Libre';
+}
+
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+#navbar {
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  z-index: 5;
+  border: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+
+#navbar a {
+  font-size: 20px;
+  overflow: hidden;
+  color: #F1DDDD;
+  margin-top: -6px;
+  width: 100px;
+  text-decoration: none;
+  font-weight: normal;
+  text-align: center;
+}
+
+#navbar a:hover {
+  background-color: #313876;
+  color: #F1DDDD;
+}
+
+#welcome-section {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 50px;
+  z-index: 1;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#welcome-text {
+  display: inline-block;
+  text-align: center;
+  margin-right: 50px;
+  font-size: 70px;
+  font-weight: normal;
+  color: #190808;
+  letter-spacing: -5px;
+}
+
+#welcome-subtext {
+  display: inline-block;
+  text-align: center;
+  margin-top:-60px;
+  margin-right: 50px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #6B4848;
+  letter-spacing: -0.5px;
+}
+
+#projects {
+  padding: 50px;
+  width: 100%;
+  background-color: var(--third-color);
+}
+
+.project-container {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  max-width: 750px;
+  width: 75%;
+  margin: auto;
+  grid-column-gap: 50px; 
+  grid-row-gap: 50px;    
+  justify-items: center;
+  justify-content: center;
+}
+
+#project-text {
+  text-align: center;
+  font-size: 45px;
+  color: white;
+  opacity: 0.7;
+  letter-spacing: -1px;
+  margin-bottom: -0px;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  width: 50vw;
+  min-width: 300px;
+  border-radius: 10px;
+  background-color: #313B32;
+}
+
+.image-container img {
+  object-fit: cover;
+  height: 350px;
+  width: 500px;
+  object-position: 0 0.5px;
+}
+
+.project-tile p {
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  font-size: 20px;
+  color: white;
+  opacity: 0.7;
+  margin: auto;
+  padding: 10px;
+  letter-spacing: -0.5px;
+  text-decoration: none;
+}
+
+#profiles {
+  padding: 50px;
+  width: 100%;
+  height: 600px;
+  background-color: var(--fourth-color);
+}
+
+#profiles-text {
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: -1px;
+  margin-bottom: -0px;
+  color: #FBFDFF;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 30px;
+  gap: 5px;
+}
+
+.form-child {
+  padding: 10px 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: "Averia Serif Libre";
+  outline: none;
+  background-color: #FBFDFF;
+}
+
+#submit {
+  width: 20%;
+  padding: 10px 5px;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #FBFDFF;
+  font-family: "Averia Serif Libre";
+  opacity: .7;
+  font-weight: bold;
+}
+
+#submit:hover {
+  opacity: 1;
+  cursor: pointer;
+  outline: none;
+}
+
+#socials-text {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  color: #FBFDFF;
+}
+
+#socials {
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+.social {
+  font-size: 30px;
+  color: white; 
+  text-decoration: none;
+}
+
+footer {
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: 50px;
+  color: #F1DDDD;
+  text-align: right;
+  padding-right: 30px;
+}
+
+@media (min-width: 1550px) {
+  .project-container {
+    height: 500px;    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 1500px
+  }
+  
+}
+
+@media (max-width: 1000px) {
+  .project-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .project-tile {
+    width: 30vw;
+    min-width: 300px;
+    max-width: 350px;
+  }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Introvert Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="documentation-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main id="main-doc">
+      <section id="introduction" class='main-section'>
+        <header>
+          <h1>Introduction</h1>
+        </header>
+        <p>In this page, you will learn the basics of identifying, interacting, and caring for an introvert. One of the ways people's personality can be classified is according to their extroversion level. This simply measures how actively social a person is, or how likely they are to be stimulated or re-energized by socializing. 
+        </p>
+        <p>There are three classifications of a person's extroversion level:
+        </p>
+        <ol>
+          <li>Extrovert</li>
+          <ul>
+            <li>These are people with high extroversion level</li>
+            <li>They are characterized with outgoingness, energetic, sociable, and friendliness. </li>
+            <li>They typically "recharge" by socializing or interacting with other people. </li>
+          </ul>
+          <li>Introvert</li>
+          <ul>
+            <li>These are people with low extroversion level</li>
+            <li>They are characterized with reclusiveness, reserved, shyness, and reflective. </li>
+            <li>They typically recharge by spending time alone. </li>
+          </ul>
+          <li>Ambivert</li>
+          <ul>
+            <li>These are people with a balance of both introversion and extroversion level</li>
+            <li>They displays qualities of both introverted and extroverted traits, depend. </li>
+            <li>They recharge by either spending time with people or spending time alone. </li>
+          </ul>
+        </ol>
+      </section>
+      <section id="identifying_an_introvert" class='main-section'> 
+        <header>
+          <h1>Identifying an Introvert</h1>
+        </header>
+        <p>One of the simplest ways to identify an introvert is to simply observe the people around your surroundings outdoors. If you can see a person, they are an extrovert. This is because introverts never go outside, so we can immediately conclude that they are extroverts.</p> 
+        <p>To implement this identification in your application, refer to the following code:
+        </p>
+        <code>
+          def identifyIntrovertsNo1(person) { <br>
+            <span class="indent"> if (!!person.outdoors) return false  <br></span>
+            <span class="indent"> else return true <br></span>
+          }
+        </code>
+        <p>Another way to identify introverts is to observe how they interact with people. As long as they interact with people, then they cannot be identified as an introvert. </p>
+        <p>This is not a direct definition of an introvert, but rather a consequence. Because they spend less time socializing with people, their socializing skills degrades in return.</p>
+        <p>To implement this identification in your application, refer to the following code:
+        </p>
+        <code>
+          def identifyIntrovertsNo2(person) { <br>
+            <span class="indent"> if (person.interacting()) return false <br></span>
+            <span class="indent"> else return true  <br></span>
+          }
+        </code>
+         <p>Lastly,  </p>
+        
+        <p>To implement this identification in your application, refer to the following code:
+        </p>
+        <code>
+          def identifyIntrovertsNo3(person) { <br>
+            <span class="indent"> if (person) return false <br></span>
+            <span class="indent"> else return true  <br></span>
+          }
+        </code>
+      </section>
+      <section id="finding_an_introvert" class='main-section'>
+        <header>
+          <h1>Finding an Introvert</h1>
+        </header>
+        <p>You can only find introverts online. Some examples of places where you can find introverts are online games, Discord and Reddit. That also happens to be the only places where you can find introverts.</p>
+        <p>You can refer to the code below for implementation of location of introverts:</p>
+        <code>
+
+          def findIntrovertsNo1(people) { <br>
+            <span class="indent"> let introverts; <br></span>
+            <span class="indent"> for person in people { <br></span>
+            <span class="indent-2">if (["onlineGame","Discord","Reddit"].some(person.location)) {<br></span>
+            <span class="indent-3">introverts.append(person);<br></span>
+            <span class="indent-2">}<br></span>
+            <span class="indent">return introverts;<br></span>
+          }
+        </code>
+        <p>Very rarely, you can find introverts at school. After all, introverts aren't exempted in undergoing the depths of hells that is school. You can simply identify one by observing what they do. If they read books or look like they think a lot, they are an introvert.</p>
+        <code>
+          def findIntrovertsNo2(people) { <br>
+            <span class="indent"> let introverts; <br></span>
+            <span class="indent"> for person in people { <br></span>
+           <span class="indent-2">if (person.location === "School" && ["reading a book", "thinking"].some(person.action)) {<br></span>
+            <span class="indent-3">introverts.append(person);<br></span>
+            <span class="indent-2">}<br></span>
+            <span class="indent">return introverts;<br></span>
+          }
+        </code>
+      </section>
+      <section id="interacting_with_an_introvert" class='main-section'>
+        <header>
+          <h1>Interacting with an Introvert</h1>
+        </header>
+        <p>To interact with an introvert. You must incorporate the mindset of not assuming that introverts inherently dislike socializing.</p>
+        <p>Because they utterly hate it.</p>
+        <p>If circumstances require you to interact with one, approach one with great care and confidence. You can consider the following when interacting with an introvert:</p>
+        <ul>
+          <li>Expect stuttering, meekness, and distance when talking with an introvert.</li>
+          <li>Avoid small talk, they hate it a lot.</li>
+          <li>Show that you're interested in them. They like attention (despite hating people).</li>
+          <li>Do not put your fellow introvert on the spotlight. Most of the time, they're uncomfortable being the center of attention (despite desiring attention).</li>
+        </ul>
+      </section>
+      <section id="taming_an_introvert" class='main-section'>
+        <header>
+          <h1>Taming an Introvert</h1>
+        </header>
+        <p>If a certain introvert has caught your attention and you would like to tame them, there are two approaches to this, depending on whether or not you're an introvert yourself.</p>
+        <p>If you are an introvert yourself, you're most likely lying.</p>
+        If you are an ambivert, you can tame an introvert by simply befriending them. Ambiverts are usually good pairs with introverts because they have the social skills to befriend a person, while at the same having the same energy or "vibe" as an introvert. 
+        <p>If you are an extrovert, your only option is to adopt them. Go to the nearest adoption center to check if your desired introvert currently has no "extrovert."</p>
+        <p>Some other tips to help taming an introvert regardless of your extraversion level may include:</p>
+        <ul>
+          <li>Expect some bumps along the way. Taming an introvert isn't an easy process after all.</li>
+          <li>Don't rush them up to be tamed. Let them slowly adjust to your presence and interaction.</li>
+          <li>Give them some alone time. Their social battery needs to be recharged often.</li>
+          <li>Encourage your introvert to socialize, but do not force them.</li>
+          <li>Be honest and direct with what needs to be said. If you think your introvert is pissing you off, let them know.</li>
+        </ul>
+      </section>
+    <section id="taking_care_of_an_introvert" class='main-section'>
+      <header>
+        <h1>Taking Care of an Introvert</h1>
+      </header>
+      <p>Once you've tamed an introvert, either through befriending or adopting them, you must continue to care for them. Otherwise your relationship will slowly relapse back to strangers.</p>
+      <p>You can take care of your introvert through the following:</p>
+      <ul>
+        <li>Get in touch with them every now and then.</li>
+        <li>Invite them to hang out with you.</li>
+        <li>Have a mindset that your introvert is probably going to piss you off. If so, be ready to confront the issue with them.</li>
+        <li>If you have mutual feelings, you can attempt to take your relationship further.</li>
+      </ul>
+    </section>
+    <section id="reference_and_disclaimer" class='main-section'>
+        <header>
+          <h1>Reference and Disclaimer</h1>
+        </header>
+        <p>All documentation in this page is taken from personal experience.</p>
+        <p>Code blocks are awkwardly placed in this documentation to fulfill the project's instructions of "code tags".</p>
+        <p><b>Disclaimer:</b> This page is considered purely as satire and humor. Please do not take any of the ideas of this page seriously, as this page only serves as  entertainment purposes. </p>
+      </section>
+    </main>
+    <nav id="navbar">
+      <header>
+        <h1>Introvert Documentation</h1>
+      </header>
+      <hr>
+      <a class="nav-link" href="#introduction">Introduction</a>
+      <a class="nav-link" href="#identifying_an_introvert">Identifying an Introvert</a>
+      <a class="nav-link" href="#finding_an_introvert">Finding an Introvert</a>
+      <a class="nav-link" href="#interacting_with_an_introvert">Interacting with an Introvert</a>
+      <a class="nav-link" href="#taming_an_introvert">Taming an Introvert</a>
+      <a class="nav-link" href="#taking_care_of_an_introvert">Taking Care of an Introvert</a>
+      <a class="nav-link" href="#reference_and_disclaimer">Reference and Disclaimer</a>
+
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kent's Survey Form</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <div class="bg">
+      <h1 id="title">8K's Order Form</h1>
+      <p id="description">Please use this form to place your orders for faster placement and delivery.
+      </p>
+      <form id="survey-form">
+        <label for="name" class="input" id="name-label">Name
+          <input required type="text" id="name" placeholder="Enter your name">
+        </label>
+        <label for="email" class="input" id="email-label">Email
+          <input required type="email" id="email" placeholder="Enter your email">
+        </label>
+        <label for="number" class="input" id="number-label">Phone Number
+          <input min="0" max="999999999" required type="number" id="number" placeholder="Enter your phone number">
+        </label>
+        <br>
+        <label class="text">Please choose a product:</label>
+        <label class="option"><input class="inline" type="checkbox" value="banana-cake"> Banana Cake - 100 PHP</label>
+        <label class="option"><input class="inline" type="checkbox" value="vietnamese_rolls"> Vietnamese Spring Rolls  - 15 PHP/pc</label>
+        <label class="option"><input class="inline" type="checkbox" value="lasagna"> Lasagna - 200 PHP</label>
+        <label class="option"><input class="inline" type="checkbox" value="lasagna">  Baked Sushi - 250 PHP</label>
+        <br>
+        <label class="text">Delivery or Pickup?</label>
+        <label class="option"><input checked class="inline" id="delivery" type="radio" name="delivery-pickup" value="delivery" checked> Delivery</label>
+        <label class="option"><input class="inline" id="pickup" type="radio" name="delivery-pickup" value="pickup"> Pickup</label>
+        <br>
+        <label class="input" for="dropdown">How did you hear from us?
+        <select name="product" id="dropdown">
+          <option value="social-media">Social media</option>
+          <option value="advertisement">Advertisement</option>
+          <option value="word-of-mouth">Word of Mouth</option>
+          <option value="other">Other</option>
+          </select>
+        </label>
+        <br>
+        <label for="address">Complete Address (leave blank if pickup):
+          <textarea></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

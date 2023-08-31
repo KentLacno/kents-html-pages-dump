@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Darker Grotesque');
+
+h1, p {
+  text-align: center;
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFrZXJ5fGVufDB8fDB8fHww&w=1000&q=80);     
+  background-size: cover;
+}
+
+.bg {
+  width: 90%;
+  max-width: 500px;
+  height: 110%;
+  margin: auto;
+  background-color: rgba(0,0,0, .7);
+  border: 5px solid rgba(0,0,0,1);
+  border-radius: 5px;
+  color: white;
+}
+
+h1, p, h2, h3 {
+  font-family: 'Darker Grotesque';
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+p {
+  font-size: 17px;
+  margin-top: -25px;
+}
+
+label {
+  display: block;
+  margin: 0 auto 10px auto;
+  width:80%;
+  font-family: 'Darker Grotesque';
+  font-size: 25px;
+}
+
+input, select, textarea {
+  font-family: 'Darker Grotesque';
+  font-size: 20px;
+  padding: 3px;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.option {
+  font-size: 20px;
+  margin-bottom: -1px;
+  width:81%
+}
+
+.text {
+  margin-bottom: -2px;
+  margin-top: 10px;
+}
+
+.inline {
+  width: unset;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 50px auto
+}
